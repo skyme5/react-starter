@@ -10,7 +10,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const postcssNormalize = require('postcss-normalize');
 const { WebpackManifestPlugin } = require('webpack-manifest-plugin');
 
-const gitRevision = childprocess.execSync('git rev-parse HEAD').toString().trim();
+const gitRevision = 0; //childprocess.execSync('git rev-parse HEAD').toString().trim();
 
 module.exports = {
   context: path.resolve(__dirname),
